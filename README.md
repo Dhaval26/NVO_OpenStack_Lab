@@ -1,5 +1,56 @@
 # NVO_OpenStack_Lab
 
+### Objective 1: Openstack Overview - Dhaval
+
+1.	Explain the following components of OpenStack -
+    a.	Nova
+    Nova component is for provisioning compute instances and supporting the creation of virtual machines, bare metal servers, and limited support of containers. 
+    
+    b.	Swift
+    Swift is an object storage service that is similar to cloud storage like google drive or drop box. It is a standalone service for providing only object storage to end users     and not the setting up the infrastructure-as-a-service. 
+
+    c.	Cinder
+    Cinder is a block storage service that is similar to an external HDD. It provides volumes to Nova virtual machines, bare metal hosts, containers, and more.
+
+    d.	Neutron
+    Neutron is a networking component of OpenStack and it provides network connectivity as a service between interface devices managed by other OpenStack services like Nova.
+
+    e.	Glance
+    Glance is an image service of OpenStack where users can register, retrieve, and discover the images that they want to use with their VMs or Containers.
+
+    f.	Keystone
+    Keystone is an identity service of OpenStack and it provides API client authentication, service discovery, and distributed multi-tenant authorization. It supports various       authentication services like LDAP, OAuth, OpenID Connect, SAML, etc. 
+
+    g.	Horizon
+    Horizon provides the dashboard or web-based UI for OpenStack services.
+
+2.	What is the difference between Users and Roles?
+    Users are member/part of one or more projects whereas roles defines which actions users can perform.
+
+3.	What is a hypervisor and which hypervisors are supported in OpenStack?
+    Hypervisor is a software that creates and runs virtual machines by separating a system’s operating system and resources from the hardware to allocate VMs.
+    Following hypervisors are supported in OpenStack:
+    •	KVM
+    •	LXC
+    •	QEMU
+    •	VMware ESX/ESXi
+    •	XenServer
+    •	Hyper-V
+    •	Ironic
+    •	UML
+    •	Virtuozzo
+
+4.	Explain the meaning of ‘flavor’ in OpenStack.
+    Flavor is a combination of compute, memory, and storage capacity of nova computing instances.
+
+5.	Create a new network of 64 IP addresses in the Network tab and enable DHCP for 32 of the IPs using either the GUI or the CLI.
+ 
+6.	Create a router that connects this new network with the existing “public network” using either the GUI or the CLI.
+ 
+7.	Start two instances with the Cirros image present that connects to the new network of 64 IPs using either the GUI or the CLI.
+ 
+
+ 
 ### Objective 2: Mukesh
   - The autoscale tool will first login into the servier via SSH, and monitor the CPU load at the interval of every 40 secs(evaluation_period). 
   - Whenever the current load at the server is more than the predefined threshold value, the autoscale tool will create a new replica of monitored server. 
