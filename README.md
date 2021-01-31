@@ -193,4 +193,19 @@ Floating IPs:
 ![image](https://user-images.githubusercontent.com/4688397/106393459-6e41c800-63b4-11eb-9c0a-4cc4ed09e188.png)
 
 
+### Objective 4: Network policies in OpenStack (Section 1/2: Roni; Section 3: Nikhil)
+
+
+#### Section 1: VM and Virtual Network Setup
+
+The network is setup as per below figure:
+
+![image](https://user-images.githubusercontent.com/8337251/106398020-bb7e6380-63cd-11eb-9e1b-242b9a1db7c1.png)
+
+Network setup in Openstack topology:
+
+![image](https://user-images.githubusercontent.com/8337251/106398070-17e18300-63ce-11eb-969d-8cb833d13053.png)
+
+![image](https://user-images.githubusercontent.com/8337251/106398131-5119f300-63ce-11eb-81be-0f8cb1652e42.png)
+
 
