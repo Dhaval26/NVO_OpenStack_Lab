@@ -98,6 +98,7 @@
     ![image](https://user-images.githubusercontent.com/71536049/106373848-d784f500-633a-11eb-9a72-9ed95fe5defd.png)
     
     
+    
 
 ### Objective 3: Multi-tenants
 
@@ -136,11 +137,58 @@ Remember to make it public.
 ![image](https://user-images.githubusercontent.com/4688397/106393270-646b9500-63b3-11eb-86a8-0f6cac33a6ec.png)
 
 
-Section 2: Setup Virtual Networks
+#### Section 2: Setup Virtual Networks
 
 1.	Login back into OpenStack UI, within the Project tag, create a new Network called VN-A with network address 192.168.100.0/24.
 2.	Repeat the above steps to create a second network VN-B with network address 192.168.200.0/24.
 
+![image](https://user-images.githubusercontent.com/4688397/106393361-e52a9100-63b3-11eb-9109-d5c0ad49eb99.png)
+
+
+#### Section 3: Launch VM instances
+
+Launch the following VMs using the flavor and image created in Section 1.
+1.	Launch VN-A_VM-1 and VN-A_VM-2 into virtual network VN-A.
+2.	Launch VN-B_VM-1 into virtual network VN-B.
+
+![image](https://user-images.githubusercontent.com/4688397/106393385-04292300-63b4-11eb-963f-56e7abd741dc.png)
+
+![image](https://user-images.githubusercontent.com/4688397/106393392-11461200-63b4-11eb-9f6a-15f6cf39e2a6.png)
+
+
+#### Section 4: Ping testing
+
+1.	Use the console within OpenStack UI to test if VMs in VN-A can ping each other, while the VM in VN-B cannot reach VMs in VN-A.
+
+![image](https://user-images.githubusercontent.com/4688397/106393401-21f68800-63b4-11eb-8016-b8daff44bc95.png)
+
+
+2.	Assign floating IP’s to the VM’s both in VN-A and VN-B, and test connectivity to the Internet.
+Internet connectivity does not require associating floating IPs to the VMs. It just requires a router enabled with SNAT having two interfaces connected to the two subnets. Inter-VN communication requires floating IPs to be configured for the two subnets.
+
+![image](https://user-images.githubusercontent.com/4688397/106393422-42bedd80-63b4-11eb-91ec-c83da1f3bfb8.png)
+
+![image](https://user-images.githubusercontent.com/4688397/106393430-481c2800-63b4-11eb-88c5-2bb13026a1a3.png)
+
+![image](https://user-images.githubusercontent.com/4688397/106393431-4bafaf00-63b4-11eb-81df-7590b83516f6.png)
+
+![image](https://user-images.githubusercontent.com/4688397/106393432-4f433600-63b4-11eb-8103-921e019de40d.png)
+
+![image](https://user-images.githubusercontent.com/4688397/106393435-523e2680-63b4-11eb-87a7-20705ef15411.png)
+
+![image](https://user-images.githubusercontent.com/4688397/106393437-55d1ad80-63b4-11eb-8988-a351863d7c50.png)
+
+
+Floating IPs:
+
+
+![image](https://user-images.githubusercontent.com/4688397/106393448-641fc980-63b4-11eb-9f3b-01902511b0d5.png)
+
+![image](https://user-images.githubusercontent.com/4688397/106393452-67b35080-63b4-11eb-895b-6838166703f8.png)
+
+![image](https://user-images.githubusercontent.com/4688397/106393455-6b46d780-63b4-11eb-865d-77114600e00e.png)
+
+![image](https://user-images.githubusercontent.com/4688397/106393459-6e41c800-63b4-11eb-9c0a-4cc4ed09e188.png)
 
 
 
