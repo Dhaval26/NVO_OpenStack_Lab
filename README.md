@@ -104,6 +104,8 @@ Objective 3: Multi-tenants
 •	In this objective, you are introduced to the function of basic tenant implementation and management with OpenStack.
 
 •	The goal is to create two virtual networks and three VMs as is shown in Figure 1.
+
+![image](https://user-images.githubusercontent.com/4688397/106393188-0179fe00-63b3-11eb-8862-9bd99e71a8a8.png)
  
 Figure 1. Final goal of Objective 3
 Section 1: Creating project, user, flavor and image
