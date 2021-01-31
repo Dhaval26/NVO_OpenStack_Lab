@@ -209,3 +209,29 @@ Network setup in Openstack topology:
 ![image](https://user-images.githubusercontent.com/8337251/106398131-5119f300-63ce-11eb-81be-0f8cb1652e42.png)
 
 
+#### Section 2: Achieve Inter-VN Communication
+
+1. The Router (R1) has 3 interfaces:
+    i. Connected to VN-A: IP Address --> 192.168.100.100
+    ii. Connected to VN-B: IP Address --> 192.168.200.200
+    iii. External Gateway: IP Address --> 172.24.4.224
+    
+2. Added default gateway 192.168.100.100 to both the VN-A VM's:
+![image](https://user-images.githubusercontent.com/8337251/106399511-47948900-63d6-11eb-8d3a-0bb33c3f2071.png)
+
+3. Added default gateway 192.168.200.200 to the VM in VN-B:
+![image](https://user-images.githubusercontent.com/8337251/106399562-97735000-63d6-11eb-992f-09c1d44b8a0c.png)
+
+4. The VM's can now ping between networks VN-A and VN-B:
+![image](https://user-images.githubusercontent.com/8337251/106399602-eae59e00-63d6-11eb-8b68-6e3502dd7889.png)
+
+5. Ping working from VN-B_VM-1 to VN-A_VM-1 and VN-A_VM-2:
+![image](https://user-images.githubusercontent.com/8337251/106399736-b3c3bc80-63d7-11eb-9c48-b632932eb375.png)
+
+6. Ping working from VN-A_VM-1 to VN-B_VM-1:
+![image](https://user-images.githubusercontent.com/8337251/106399883-83c8e900-63d8-11eb-8ce9-6dea8bcfbd7f.png)
+
+7. Ping working from VN-A_VM-2 to VN-B_VM-1:
+![image](https://user-images.githubusercontent.com/8337251/106399977-00f45e00-63d9-11eb-974c-c937d3ad1491.png)
+
+
