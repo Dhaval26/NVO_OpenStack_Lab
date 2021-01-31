@@ -61,11 +61,11 @@
     #### Start stress: "for i in 1 2 3 4; do while : ; do : ; done & done"
     #### Stop stress:  "for i in 1 2 3 4; do kill %$i; done"
    
-   ## Steps excecuted for this objective:
+   ## Steps executed for this objective:
    
   - Start the tool via "python3 sdn_lab2.py" command.
   
-  -	Before activity only one server in the dashboard.
+  -	Before activity only one server can be seen in the dashboard.
     https://github.com/mukesh0733/images/commit/a599a29dce409defd3f0a05759477f29955bd463#commitcomment-46538272
   
   - Stress generated to the server:
