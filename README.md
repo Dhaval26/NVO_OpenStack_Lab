@@ -2,7 +2,8 @@
 
 ### Objective 1: Openstack Overview (Dhaval)
 
-1.	Explain the following components of OpenStack -
+1.	Explain the following components of OpenStack:
+
     a.	Nova:
     Nova component is for provisioning compute instances and supporting the creation of virtual machines, bare metal servers, and limited support of containers. 
     
