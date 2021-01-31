@@ -1,6 +1,6 @@
 # NVO_OpenStack_Lab
 
-### Objective 1: Openstack Overview - Dhaval
+### Objective 1: Openstack Overview (Dhaval)
 
 1.	Explain the following components of OpenStack -
     a.	Nova:
@@ -63,7 +63,7 @@
 
     ![image](https://user-images.githubusercontent.com/63819641/106371660-22dfd900-6324-11eb-870a-06253522ce66.png)
  
-### Objective 2: Auto-scaling application using Python: Mukesh
+### Objective 2: Auto-scaling application using Python (Mukesh)
   - The autoscale tool will first login into the servier via SSH, and monitor the CPU load at the interval of every 40 secs(evaluation_period). 
   - Whenever the current load at the server is more than the predefined threshold value, the autoscale tool will create a new replica of monitored server. 
   - Here we can take input form the user for the flavor,network_id and the source image too. For now the values are defined in the tool itself. 
@@ -100,7 +100,7 @@
     
     
 
-### Objective 3: Multi-tenants
+### Objective 3: Multi-tenants (Swati)
 
 •	In this objective, you are introduced to the function of basic tenant implementation and management with OpenStack.
 
