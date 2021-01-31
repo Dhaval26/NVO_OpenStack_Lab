@@ -99,7 +99,7 @@
     
     
 
-Objective 3: Multi-tenants
+### Objective 3: Multi-tenants
 
 •	In this objective, you are introduced to the function of basic tenant implementation and management with OpenStack.
 
@@ -108,28 +108,39 @@ Objective 3: Multi-tenants
 ![image](https://user-images.githubusercontent.com/4688397/106393188-0179fe00-63b3-11eb-8862-9bd99e71a8a8.png)
  
 Figure 1. Final goal of Objective 3
-Section 1: Creating project, user, flavor and image
+
+#### Section 1: Creating project, user, flavor and image
 
 1.	Within OpenStack UI Identity tag, create a project called lab2. Then create a user called lab2_admin and attach it to the project lab2.
- 
- 
+
+![image](https://user-images.githubusercontent.com/4688397/106393236-35552380-63b3-11eb-9e7a-706d994fe991.png)
+
+![image](https://user-images.githubusercontent.com/4688397/106393242-3d14c800-63b3-11eb-9265-742190184e0d.png)
+
 2.	Within OpenStack UI Admin tag, create a VM Flavor called ngn.tiny with the following setting:
 vCPU 			= 1
 RAM 			= 128MB
 Root Disk 		= 1GB
 Ephemeral Disk 	= 1GB
 Swap Disk 		= 1GB
- 
+
+![image](https://user-images.githubusercontent.com/4688397/106393252-4bfb7a80-63b3-11eb-9dc0-8ccc61070918.png)
+
 3.	Within OpenStack UI Admin tag, upload a VM image into OpenStack. You can use this URL: http://tinycorelinux.net/7.x/x86/release/Core-current.iso.
 Remember to make it public.
- 
+
+![image](https://user-images.githubusercontent.com/4688397/106393260-59b10000-63b3-11eb-8924-7a4e54c795d3.png)
+
 4.	Before proceeding, logout and login with your newly created user lab2_admin.
- 
+
+![image](https://user-images.githubusercontent.com/4688397/106393270-646b9500-63b3-11eb-86a8-0f6cac33a6ec.png)
+
+
 Section 2: Setup Virtual Networks
 
 1.	Login back into OpenStack UI, within the Project tag, create a new Network called VN-A with network address 192.168.100.0/24.
 2.	Repeat the above steps to create a second network VN-B with network address 192.168.200.0/24.
- 
-Section 3: Launch VM instances
+
+
 
 
