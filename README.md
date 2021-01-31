@@ -44,12 +44,24 @@
     Flavor is a combination of compute, memory, and storage capacity of nova computing instances.
 
 5.	Create a new network of 64 IP addresses in the Network tab and enable DHCP for 32 of the IPs using either the GUI or the CLI.
+
+    ![image](https://user-images.githubusercontent.com/63819641/106371615-e01e0100-6323-11eb-94ad-6017c250ed5d.png)
+    
+    ![image](https://user-images.githubusercontent.com/63819641/106371631-f3c96780-6323-11eb-9f0b-333f2f2050f0.png)
  
 6.	Create a router that connects this new network with the existing “public network” using either the GUI or the CLI.
+
+    ![image](https://user-images.githubusercontent.com/63819641/106371635-fdeb6600-6323-11eb-9e45-b15d615b1d85.png)
+
+    ![image](https://user-images.githubusercontent.com/63819641/106371639-05ab0a80-6324-11eb-94a4-ab432b8537e5.png)
+
+    ![image](https://user-images.githubusercontent.com/63819641/106371645-122f6300-6324-11eb-8adb-812eb0e61acb.png)
  
 7.	Start two instances with the Cirros image present that connects to the new network of 64 IPs using either the GUI or the CLI.
  
+    ![image](https://user-images.githubusercontent.com/63819641/106371650-1a879e00-6324-11eb-8a3d-c097120fa551.png)
 
+    ![image](https://user-images.githubusercontent.com/63819641/106371660-22dfd900-6324-11eb-870a-06253522ce66.png)
  
 ### Objective 2: Auto-scaling application using Python: Mukesh
   - The autoscale tool will first login into the servier via SSH, and monitor the CPU load at the interval of every 40 secs(evaluation_period). 
