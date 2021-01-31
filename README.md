@@ -78,16 +78,22 @@
   - Start the tool via "python3 sdn_lab2.py" command.
   
   -	Before activity only one server can be seen in the dashboard.
-    https://github.com/mukesh0733/images/commit/a599a29dce409defd3f0a05759477f29955bd463#commitcomment-46538272
+    
+    ![image](https://user-images.githubusercontent.com/71536049/106373808-8b39b500-633a-11eb-8792-c6d8c97e1b42.png)
   
   - Stress generated to the server:
-  https://github.com/mukesh0733/images/commit/a599a29dce409defd3f0a05759477f29955bd463#commitcomment-46538288
+    
+    ![image](https://user-images.githubusercontent.com/71536049/106373817-a0aedf00-633a-11eb-8eb7-9bfd9a846d4e.png)
   
   - New 4 Autoscale servers created:
-  https://github.com/mukesh0733/images/commit/a599a29dce409defd3f0a05759477f29955bd463#commitcomment-46538305
+    
+    ![image](https://user-images.githubusercontent.com/71536049/106373833-b7edcc80-633a-11eb-8103-8a27561591ed.png)
   
   -	Console output of the tool:
-  https://github.com/mukesh0733/images/commit/a599a29dce409defd3f0a05759477f29955bd463#commitcomment-46538312
+    
+    ![image](https://user-images.githubusercontent.com/71536049/106373844-c89e4280-633a-11eb-8174-c96b06c155dc.png)
   
   - After activity, the process killed:
- https://github.com/mukesh0733/images/commit/a599a29dce409defd3f0a05759477f29955bd463#commitcomment-46538298
+    
+    ![image](https://user-images.githubusercontent.com/71536049/106373848-d784f500-633a-11eb-9a72-9ed95fe5defd.png)
+
