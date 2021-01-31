@@ -3,25 +3,25 @@
 ### Objective 1: Openstack Overview - Dhaval
 
 1.	Explain the following components of OpenStack -
-    a.	Nova
+    a.	Nova:
     Nova component is for provisioning compute instances and supporting the creation of virtual machines, bare metal servers, and limited support of containers. 
     
-    b.	Swift
+    b.	Swift:
     Swift is an object storage service that is similar to cloud storage like google drive or drop box. It is a standalone service for providing only object storage to end users     and not the setting up the infrastructure-as-a-service. 
 
-    c.	Cinder
+    c.	Cinder:
     Cinder is a block storage service that is similar to an external HDD. It provides volumes to Nova virtual machines, bare metal hosts, containers, and more.
 
-    d.	Neutron
+    d.	Neutron:
     Neutron is a networking component of OpenStack and it provides network connectivity as a service between interface devices managed by other OpenStack services like Nova.
 
-    e.	Glance
+    e.	Glance:
     Glance is an image service of OpenStack where users can register, retrieve, and discover the images that they want to use with their VMs or Containers.
 
-    f.	Keystone
+    f.	Keystone:
     Keystone is an identity service of OpenStack and it provides API client authentication, service discovery, and distributed multi-tenant authorization. It supports various       authentication services like LDAP, OAuth, OpenID Connect, SAML, etc. 
 
-    g.	Horizon
+    g.	Horizon:
     Horizon provides the dashboard or web-based UI for OpenStack services.
 
 2.	What is the difference between Users and Roles?
