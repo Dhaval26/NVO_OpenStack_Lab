@@ -1,4 +1,4 @@
-# NVO_OpenStack_Lab
+# NVO_OpenStack_Lab_2
 
 ### Objective 1: Openstack Overview (Dhaval)
 
