@@ -245,3 +245,23 @@ Network setup in Openstack topology:
 ![image](https://user-images.githubusercontent.com/8337251/106399977-00f45e00-63d9-11eb-974c-c937d3ad1491.png)
 
 
+#### Section 3: Network Policy Management
+1.	VN-A_VM-1 can ping VN-B_VM-1, but VN-A_VM-2 cannot ping VN-B_VM-1
+Configure Security Groups, create Security Group for each VM
+![image](https://user-images.githubusercontent.com/63819430/106493245-1f5c6700-6476-11eb-9e2b-78f57892d000.png)
+Reference Security Groups of each other in Security Group
+![image](https://user-images.githubusercontent.com/63819430/106493317-38651800-6476-11eb-81eb-06c5ee3ecf71.png)
+![image](https://user-images.githubusercontent.com/63819430/106493360-45820700-6476-11eb-815b-b69b6d26af9c.png)
+![image](https://user-images.githubusercontent.com/63819430/106493438-5e8ab800-6476-11eb-861e-e61eaf5b6ee7.png)
+2.	VN-B_VM-1 can go out to the Internet, but VN-A_VM-1 and VN-A_VM-2 cannot
+Considering 8.8.8.8 as the Internet and using ICMP to check connectivity
+VN-B_VM-1 to 8.8.8.8
+Alow ICMP to 8.8.8.8 in Ingress as well as Egress
+![image](https://user-images.githubusercontent.com/63819430/106493497-719d8800-6476-11eb-993d-3ba881d4a289.png)
+![image](https://user-images.githubusercontent.com/63819430/106493584-909c1a00-6476-11eb-9b97-344fc63dec4f.png)
+VN-A_VM-1 to 8.8.8.8
+![image](https://user-images.githubusercontent.com/63819430/106493651-aa3d6180-6476-11eb-80bc-83dadc7d24be.png)
+![image](https://user-images.githubusercontent.com/63819430/106493667-add0e880-6476-11eb-8839-800687816291.png)
+VN-A_VM-2 to 8.8.8.8
+![image](https://user-images.githubusercontent.com/63819430/106493702-ba554100-6476-11eb-91f4-7a44d7f09cf2.png)
+![image](https://user-images.githubusercontent.com/63819430/106493713-bf19f500-6476-11eb-8b8b-e15ba475e019.png)
