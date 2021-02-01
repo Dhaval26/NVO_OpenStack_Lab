@@ -26,11 +26,14 @@
     Horizon provides the dashboard or web-based UI for OpenStack services.
 
 2.	What is the difference between Users and Roles?
+
     Users are member/part of one or more projects whereas roles defines which actions users can perform.
 
 3.	What is a hypervisor and which hypervisors are supported in OpenStack?
+
     Hypervisor is a software that creates and runs virtual machines by separating a system’s operating system and resources from the hardware to allocate VMs.
     Following hypervisors are supported in OpenStack:
+    
     •	KVM
     •	LXC
     •	QEMU
@@ -42,6 +45,7 @@
     •	Virtuozzo
 
 4.	Explain the meaning of ‘flavor’ in OpenStack.
+
     Flavor is a combination of compute, memory, and storage capacity of nova computing instances.
 
 5.	Create a new network of 64 IP addresses in the Network tab and enable DHCP for 32 of the IPs using either the GUI or the CLI.
