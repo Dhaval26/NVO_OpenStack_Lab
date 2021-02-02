@@ -215,9 +215,14 @@ Network setup in Openstack topology:
 
 #### Section 2: Achieve Inter-VN Communication
 
+a. Figure out how to ping between VM’s in VN-A and VM’s in VN-B
+
 1. The Router (R1) has 3 interfaces:
+
     i. Connected to VN-A: IP Address --> 192.168.100.100
+    
     ii. Connected to VN-B: IP Address --> 192.168.200.200
+    
     iii. External Gateway: IP Address --> 172.24.4.224
     
 2. Added default gateway 192.168.100.100 to both the VN-A VM's:
@@ -243,6 +248,26 @@ Network setup in Openstack topology:
 7. Ping working from VN-A_VM-2 to VN-B_VM-1:
 
 ![image](https://user-images.githubusercontent.com/8337251/106399977-00f45e00-63d9-11eb-974c-c937d3ad1491.png)
+
+b. Figure out how to ping from the VM’s out to the Internet
+
+1. Add security rules (Allow ICMP/SSH etc.)
+
+![image](https://user-images.githubusercontent.com/8337251/106533463-7599cc00-64af-11eb-89d1-e415b9fc9ed4.png)
+
+
+2. Assign floating IP address to the instances
+
+![image](https://user-images.githubusercontent.com/8337251/106535103-b1826080-64b2-11eb-9045-5fa3f597c776.png)
+
+![image](https://user-images.githubusercontent.com/8337251/106535187-e1316880-64b2-11eb-9d09-d59c73a80196.png)
+
+
+3. Add default gateway to the router that connects to the external gateway for all instances (this was done in previous objective)
+
+4. The instances can now ping the internet (8.8.8.8)
+
+![image](https://user-images.githubusercontent.com/8337251/106535310-37061080-64b3-11eb-9354-0e21c6a8e7d0.png)
 
 
 #### Section 3: Network Policy Management
